@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nomad Respect Counter</title>
+
+        <meta charset="UTF-8">
+
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> 
+        <script async="true" src="js/counter.js"></script>
+        <script async="true" src="js/cookies.js"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+        <link rel="manifest" href="img/icon/site.webmanifest">
+    </head>
+    <body onload="load();">
+        <div class="content">
+            <div class="counter-section">
+                <div class="title">
+                    <h1 id="title-text">Nomad Respect Counter</h1>
+                </div>
+                <div class="counter">
+                    <h2 id="counter-count">0</h2>
+                    <button id="add-count" type="button" onclick="addCount(this);">+1</button>
+                    <button id="minus-count" type="button" onclick="minusCount(this);">-1</button>
+                </div>
+                <br>
+                <button id="clear" type="button" onclick="clearCount(this);">Clear Counter</button>
+                <p>"do it" -Nomad</p>
+            </div>
+            <div class="history">
+                <h1>Counter History</h1>
+                <ul id="history-list">
+
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
